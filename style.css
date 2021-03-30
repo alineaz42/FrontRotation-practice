@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#container {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.parent-1 {
+  width: 48%;
+  height: 300px;
+  background: rgb(74, 139, 10);
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+.parent-1 .child {
+  width: 100%;
+  height: 100%;
+  background: chartreuse;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+.parent-1:hover .child {
+  transform: rotate(5deg);
+}
+.parent-2 {
+  width: 48%;
+  height: 300px;
+  background: blue;
+}
+.parent-2 .child {
+  width: 100%;
+  height: 100%;
+  background: rgb(72, 72, 235);
+  transition: all 0.5s ease;
+}
+.parent-3 {
+  width: 48%;
+  height: 300px;
+  background: red;
+  transition: all 0.5s ease;
+}
+.parent-3 .child {
+  width: 100%;
+  height: 100%;
+  background: rgb(250, 99, 99);
+  transition: all 0.5s ease;
+}
+.parent-4 {
+  width: 48%;
+  height: 300px;
+  background: yellow;
+}
+.parent-4 .child {
+  width: 100%;
+  height: 100%;
+  background: rgb(241, 241, 120);
+  transition: all 0.5s ease;
+}
+.parent-2:hover .child {
+  transform: rotate(5deg);
+}
+.parent-3:hover .child {
+  transform: rotate(5deg);
+}
+.parent-4:hover .child {
+  transform: rotate(5deg);
+}
